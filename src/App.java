@@ -1,7 +1,6 @@
-
 public class App {
     public static void main(String[] args) throws Exception {
-        BangladeshPresident president = new BangladeshPresident("John Doe");
+        BangladeshPresident president = BangladeshPresident.getPresident("Fluffylord");
         System.out.println(president.getPresidentName());
     }
 }
