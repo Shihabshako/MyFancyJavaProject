@@ -1,13 +1,16 @@
 public class BangladeshPresident {
     public String presidentName;
-    public static final BangladeshPresident theBangladeshPresident = new BangladeshPresident();
+    public static final BangladeshPresident theBangladeshPresident ;
  
     private BangladeshPresident(){
  
     } 
  
     public static BangladeshPresident getPresident(String presidentName){
-        theBangladeshPresident.presidentName = presidentName;
+        if(theBangladeshPresident == null){
+           theBangladeshPresident = new BangladeshPresident()
+           theBangladeshPresident.presidentName = presidentName;
+        }
         return theBangladeshPresident;
     }
  
